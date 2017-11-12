@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+    <h1>Submit your details</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <form method="post" action="/api/details">      
+            <div class="form-group">
+              <label>From Name</label>
+              <input type="text" class="form-control" name="from">        
+            </div>
+            <div class="form-group">
+              <label>From Address Line 1</label>
+              <input type="text" class="form-control" name="address1">        
+            </div>
+            <div class="form-group">
+              <label>From Address Line 2</label>
+              <input type="text" class="form-control" name="address2">        
+            </div>
+            <div class="form-group">
+              <label>From City</label>
+              <input type="text" class="form-control" name="city">        
+            </div>
+            <div class="form-group">
+              <label>From State</label>
+              <input type="text" class="form-control" name="state">        
+            </div>
+            <div class="form-group">
+              <label>From Zip Code</label>
+              <input type="number" class="form-control" name="zip">        
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea type="number" class="form-control" name="message"></textarea>     
+            </div>
+
+            <button class="btn" type="submit">Submit</button>    
+             
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <form method="post" action="/api/details">
+        Name:
+        <input type="text" id="name" name="name" /> Address:
+        <input type="text" id="address" name="address" />
+        <br>
+        <input type="submit" name="submit" Value="Submit" /> &nbsp&nbsp
+        <input type="reset" name="reset" value="Reset">
+    </form> -->
+</body>
+
+</html>
